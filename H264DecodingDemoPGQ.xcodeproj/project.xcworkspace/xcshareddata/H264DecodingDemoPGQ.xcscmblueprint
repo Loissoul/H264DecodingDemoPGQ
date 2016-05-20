@@ -1,20 +1,28 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D2282F62675CCE719D71D29FBC0318DAD72EF166",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "f18b4f4d-5157-db49-a5eb-5cedbeafe111++8446" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D2282F62675CCE719D71D29FBC0318DAD72EF166" : 0,
     "f18b4f4d-5157-db49-a5eb-5cedbeafe111++8446" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AA274AB9-D865-4B2A-A8A0-6C723B76568C",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D2282F62675CCE719D71D29FBC0318DAD72EF166" : "H264DecodingDemoPGQ\/",
     "f18b4f4d-5157-db49-a5eb-5cedbeafe111++8446" : "..\/..\/.."
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "H264DecodingDemoPGQ",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "H264DecodingDemoPGQ.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Loissoul\/H264DecodingDemoPGQ.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2282F62675CCE719D71D29FBC0318DAD72EF166"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.39\/svn\/WDApp",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",

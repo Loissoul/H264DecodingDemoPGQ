@@ -1,9 +1,8 @@
+//  ViewController.h
+//  H264DecodingDemoPGQ
 //
-//  ViewController.m
-//  H264DecodeDemo
-//
-//  Created by Yao Dong on 15/8/6.
-//  Copyright (c) 2015年 duowan. All rights reserved.
+//  Created by Lois_pan on 16/5/18.
+//  Copyright © 2016年 Lois_pan. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -101,6 +100,7 @@ static void didDecompress( void *decompressionOutputRefCon, void *sourceFrameRef
                                                           0, &blockBuffer);
     if(status == kCMBlockBufferNoErr) {
         CMSampleBufferRef sampleBuffer = NULL;
+        
         const size_t sampleSizeArray[] = {vp.size};
         status = CMSampleBufferCreateReady(kCFAllocatorDefault,
                                            blockBuffer,
