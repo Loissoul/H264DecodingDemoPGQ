@@ -151,30 +151,26 @@ static void didDecompress( void *decompressionOutputRefCon, void *sourceFrameRef
         vp.buffer[2] = *(pNalSize + 1);
         vp.buffer[3] = *(pNalSize);
         
+//        开始码后第一个byte的后5位，7代表sps ，8代表pps 
         CVPixelBufferRef pixelBuffer = NULL;
         int nalType = vp.buffer[4] & 0x1F;
         switch (nalType) {
             case 0x05:
-                NSLog(@"Nal type is IDR frame");
                 if([self initH264Decoder]) {
                     pixelBuffer = [self decode:vp];
                 }
                 break;
             case 0x07:
-                NSLog(@"Nal type is SPS");
                 _spsSize = vp.size - 4;
                 _sps = malloc(_spsSize);
                 memcpy(_sps, vp.buffer + 4, _spsSize);
                 break;
             case 0x08:
-                NSLog(@"Nal type is PPS");
                 _ppsSize = vp.size - 4;
                 _pps = malloc(_ppsSize);
                 memcpy(_pps, vp.buffer + 4, _ppsSize);
                 break;
-                
             default:
-                NSLog(@"Nal type is B/P frame");
                 pixelBuffer = [self decode:vp];
                 break;
         }
